@@ -38,6 +38,7 @@ clearBoard.addEventListener("click", () => {
         button.innerHTML = "";
         button.disabled = false;
         winner.innerHTML = "Board cleared"
+        clearBoard.style.backgroundColor = "white";
     })
 })
 
@@ -83,6 +84,7 @@ if (cell1.textContent == "✕" && cell2.textContent == "✕" && cell3.textConten
     let xscore = document.getElementById("X-Score");
     let xvalue = parseInt(xscore.innerHTML)+1;
     xscore.innerHTML = xvalue;
+    clearBoard.style.backgroundColor = "plum";
     }
 }
 
@@ -100,6 +102,7 @@ if (cell1.textContent == "◯" && cell2.textContent == "◯" && cell3.textConten
     let oscore = document.getElementById("O-Score");
     let ovalue = parseInt(oscore.innerHTML)+1;
     oscore.innerHTML = ovalue;
+    clearBoard.style.backgroundColor = "plum";
     }
 }
 
@@ -110,6 +113,7 @@ function checkDraw () {
         cell7.textContent != "" && cell8.textContent != "" &&
         cell9.textContent != "") {
         winner.innerHTML = "It's a Draw! Clear the board to proceed."
+        clearBoard.style.backgroundColor = "plum";
         }
 };
 

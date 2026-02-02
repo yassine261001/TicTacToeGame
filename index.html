@@ -11,7 +11,6 @@
 
 <h1>Tic Tac Toe Game</h1>
 
-
     <section>
         <div id="GameBoard">
             <div><button id= cell1 class="Cell"></button></div>
@@ -27,19 +26,36 @@
     </section>
 
         <div id="ResetButtonContainer">
-            <button id="ResetButton">Reset Game</button>
+            <button id="ResetButton">Switch Turn</button>
+            <button id="ClearBoard">Clear Board</button>
+            <button id="ResetScores">Reset Score</button>
         </div>
 
-        <p>
-        </p>
+<p></p>
 
         <div id="GameStatus">
             <div id="WinnerDisplay">Game started!</div>
-            <p>--------------------------------------</p>
-            <div id="OScoreLabel">O-Score:<div id="O-Score">0</div></div>
-            <p>--------------------------------------</p>
-            <div id="XScoreLabel">X-Score:<div id="X-Score">0</div></div>
         </div>
+
+<p></p>
+
+<div id="GameScores">
+    <section id="OScoreSection">
+            <div id="OScoreLabel">O-Score:<div id="O-Score">0</div></div>
+    </section>
+
+    <section id="XScoreSection">
+            <div id="XScoreLabel">X-Score:<div id="X-Score">0</div></div>
+    </section>
+</div>
+
+<p></p>
+    <div id="CurrentTurnDiv">
+    <section id="CurrentTurn">
+        <div id="CurrentTurnContainer">Current Turn:<div id="CurrentTurnSymbol"></div>
+        </div>
+    </section>
+    </div>
 
     <script src="script.js"></script>
 </body>
